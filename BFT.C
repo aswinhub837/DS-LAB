@@ -1,5 +1,5 @@
 #include<stdio.h>
-int a[20][20],q[20],visited[20],n,i,j,f=0,r=-1; // a[20][20]: adjacency matrix
+int a[20][20],q[20],visited[20],n,i,j,f=0,r=-1;
 void bfs(int start)
 {
 q[++r]=start;
@@ -21,7 +21,7 @@ void main()
 int v;
 clrscr();
 printf("\n Enter the number of vertices:");
-scanf("% d",&n);
+scanf("%d",&n);
 for(i=1;i<n;i++)
 {
 q[i]=0;
@@ -33,13 +33,13 @@ for(i=1;i<=n;i++)
 {
 for(j=1;j<=n;j++)
 {
-scanf("% d",&a[i][j]);
+scanf("%d",&a[i][j]);
 }
 }
 printf("\n Enter the starting vertex:");
-scanf("% d", &v);
+scanf("%d", &v);
 printf("\n The node which are reachable are:\n");
-printf("% d ",v);
+printf("%d",v);
 bfs(v);
 getch();
 }
